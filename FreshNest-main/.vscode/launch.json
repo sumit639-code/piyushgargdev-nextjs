@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "React: Run FreshNest",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/frontend/react/src/"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "React: Debug FreshNest",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend/react/src/"
+    },
+    {
+      "type": "dart",
+      "request": "launch",
+      "name": "Dart: Launch Flutter",
+      "program": "${workspaceFolder}/frontend/flutter/lib/main.dart",
+      "preLaunchTask": "flutter pub get"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Node: Launch Backend Server",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/backend"
+    }
+  ]
+}
